@@ -1,0 +1,125 @@
+ #    Column                           Dtype       Description
+---   ------                           -----       -----------
+ 0    has_null                         object      All the same b''
+ 1    wave                             float64     Apparently the group of the participants
+ 2    gender                           object      Gender of self
+ 3    age                              float64     Age of self
+ 4    age_o                            float64     Age of partner
+ 5    d_age                            float64     Difference in age
+ 6    d_d_age                          object      Difference in age (grouped ie. b'[0-1]')
+ 7    race                             object      Race of self
+ 8    race_o                           object      Race of partner
+ 9    samerace                         object      Whether the two persons have the same race or not.
+ 10   importance_same_race             float64     How important is it that partner is of same race?
+ 11   importance_same_religion         float64     How important is it that partner has same religion?
+ 12   d_importance_same_race           object      Grouped (Apparently is a rating 1 to 10)
+ 13   d_importance_same_religion       object      Grouped (Apparently is a rating 1 to 10)
+ 14   field                            object      Field of study
+ 15   pref_o_attractive                float64     How important does partner rate attractiveness
+ 16   pref_o_sincere                   float64     How important does partner rate sincerity
+ 17   pref_o_intelligence              float64     How important does partner rate intelligence
+ 18   pref_o_funny                     float64     How important does partner rate being funny
+ 19   pref_o_ambitious                 float64     How important does partner rate ambition
+ 20   pref_o_shared_interests          float64     How important does partner rate having shared interests
+ 21   d_pref_o_attractive              object      Grouped
+ 22   d_pref_o_sincere                 object      Grouped
+ 23   d_pref_o_intelligence            object      Grouped
+ 24   d_pref_o_funny                   object      Grouped
+ 25   d_pref_o_ambitious               object      Grouped
+ 26   d_pref_o_shared_interests        object      Grouped
+ 27   attractive_o                     float64     Rating by partner (about me) at night of event on attractiveness
+ 28   sinsere_o                        float64     Rating by partner (about me) at night of event on sincerity
+ 29   intelligence_o                   float64     Rating by partner (about me) at night of event on intelligence
+ 30   funny_o                          float64     Rating by partner (about me) at night of event on being funny
+ 31   ambitous_o                       float64     Rating by partner (about me) at night of event on being ambitious
+ 32   shared_interests_o               float64     Rating by partner (about me) at night of event on shared interest
+ 33   d_attractive_o                   object      Grouped
+ 34   d_sinsere_o                      object      Grouped
+ 35   d_intelligence_o                 object      Grouped
+ 36   d_funny_o                        object      Grouped
+ 37   d_ambitous_o                     object      Grouped
+ 38   d_shared_interests_o             object      Grouped
+ 39   attractive_important             float64     What do you look for in a partner - attractiveness
+ 40   sincere_important                float64     What do you look for in a partner - sincerity
+ 41   intellicence_important           float64     What do you look for in a partner - intelligence
+ 42   funny_important                  float64     What do you look for in a partner - being funny
+ 43   ambtition_important              float64     What do you look for in a partner - ambition
+ 44   shared_interests_important       float64     What do you look for in a partner - shared interests
+ 45   d_attractive_important           object      Grouped
+ 46   d_sincere_important              object      Grouped
+ 47   d_intellicence_important         object      Grouped
+ 48   d_funny_important                object      Grouped
+ 49   d_ambtition_important            object      Grouped
+ 50   d_shared_interests_important     object      Grouped
+ 51   attractive                       float64     Rate yourself - attractiveness
+ 52   sincere                          float64     Rate yourself - sincerity
+ 53   intelligence                     float64     Rate yourself - intelligence
+ 54   funny                            float64     Rate yourself - being funny
+ 55   ambition                         float64     Rate yourself - ambition
+ 56   d_attractive                     object      Grouped
+ 57   d_sincere                        object      Grouped
+ 58   d_intelligence                   object      Grouped
+ 59   d_funny                          object      Grouped
+ 60   d_ambition                       object      Grouped
+ 61   attractive_partner               float64     Rate your partner - attractiveness
+ 62   sincere_partner                  float64     Rate your partner - sincerity
+ 63   intelligence_partner             float64     Rate your partner - intelligence
+ 64   funny_partner                    float64     Rate your partner - being funny
+ 65   ambition_partner                 float64     Rate your partner - ambition
+ 66   shared_interests_partner         float64     Rate your partner - shared interests
+ 67   d_attractive_partner             object      Grouped
+ 68   d_sincere_partner                object      Grouped
+ 69   d_intelligence_partner           object      Grouped
+ 70   d_funny_partner                  object      Grouped
+ 71   d_ambition_partner               object      Grouped
+ 72   d_shared_interests_partner       object      Grouped
+ 73   sports                           float64     Your own interests [1-10]
+ 74   tvsports                         float64     
+ 75   exercise                         float64
+ 76   dining                           float64
+ 77   museums                          float64
+ 78   art                              float64
+ 79   hiking                           float64
+ 80   gaming                           float64
+ 81   clubbing                         float64
+ 82   reading                          float64
+ 83   tv                               float64
+ 84   theater                          float64
+ 85   movies                           float64
+ 86   concerts                         float64
+ 87   music                            float64
+ 88   shopping                         float64
+ 89   yoga                             float64
+ 90   d_sports                         object 
+ 91   d_tvsports                       object 
+ 92   d_exercise                       object 
+ 93   d_dining                         object 
+ 94   d_museums                        object 
+ 95   d_art                            object 
+ 96   d_hiking                         object 
+ 97   d_gaming                         object 
+ 98   d_clubbing                       object 
+ 99   d_reading                        object 
+ 100  d_tv                             object 
+ 101  d_theater                        object 
+ 102  d_movies                         object 
+ 103  d_concerts                       object 
+ 104  d_music                          object 
+ 105  d_shopping                       object 
+ 106  d_yoga                           object 
+ 107  interests_correlate              float64     Correlation between participant’s and partner’s ratings of interests.
+ 108  d_interests_correlate            object 
+ 109  expected_happy_with_sd_people    float64     How happy do you expect to be with the people you meet during the speed-dating event?
+ 110  expected_num_interested_in_me    float64     Out of the 20 people you will meet, how many do you expect will be interested in dating
+ 111  expected_num_matches             float64     How many matches do you expect to get?
+ 112  d_expected_happy_with_sd_people  object      
+ 113  d_expected_num_interested_in_me  object 
+ 114  d_expected_num_matches           object 
+ 115  like                             float64     Did you like your partner?
+ 116  guess_prob_liked                 float64     How likely do you think it is that your partner likes you?
+ 117  d_like                           object      
+ 118  d_guess_prob_liked               object 
+ 119  met                              float64     Have you met your partner before?
+ 120  decision                         object      Decision at night of event.
+ 121  decision_o                       object      Decision of partner at night of event.
+ 122  match                            object      Match (yes/no)
